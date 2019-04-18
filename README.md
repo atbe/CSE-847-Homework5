@@ -3,6 +3,8 @@
 > Name: `Ibrahim Ahmed`
 > NetID: `ahmedibr`
 
+**[Click here](https://github.com/atbe/CSE-847-Homework5) to view the Github repo for this assignment.**
+
 
 ## Problem `1.1`
 
@@ -52,3 +54,85 @@ Here is the plot of the points provided:
 The first principal component is `[-0.4472, 0.8944]`. This was computed using matlabs built in `pca` function. This makes sense as the point aligns with the downward line formed by the points which is indicative of the direction of the points.
 
 The second principal component is `[0.8944, 0.4472]`. This point is almost a mirror of the first point, but further along the line that is formed by the points.
+
+## Problem `2.2`
+
+### Reconstruction error
+
+Here are the PCA reconstruction errors for the different parameters of `p`
+
+| p   | error   |
+|-----|---------|
+| 10  | 91.7083 |
+| 50  | 31.4649 |
+| 100 | 16.4429 |
+| 200 | 6.9912  |
+
+### Visualizing the reduction
+
+Here are the subset of original images we will use to visualize the effect of the reconstruction which is displayed in the table below:
+
+<table>
+  <tr>
+    <th>First image</th>
+    <th>Second image</th>
+  </tr>
+  <tr>
+    <td style="width:100px; height:100px;">
+      <img src="./problem-2-sample-image1.jpg" height="100" width="100">
+    </td>
+    <td style="width:100px; height:100px;">
+      <img src="./problem-2-sample-image2.jpg" height="100" width="100">
+    </td>
+  </tr>
+
+</table>
+
+Here are the reduced images:
+
+<table>
+  <tr>
+    <th>p</th>
+    <th>First image</th>
+    <th>Second image</th>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_1_10.jpg" height="100" width="100">
+    </td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_2_10.jpg" height="100" width="100">
+    </td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_1_50.jpg" height="100" width="100">
+    </td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_2_50.jpg" height="100" width="100">
+    </td>
+  </tr>
+
+  <tr>
+    <td>100</td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_1_100.jpg" height="100" width="100">
+    </td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_2_100.jpg" height="100" width="100">
+    </td>
+  </tr>
+
+  <tr>
+    <td>200</td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_1_200.jpg" height="100" width="100">
+    </td>
+    <td style="width:100px; height:100px;">
+      <img src="./reduced_images/image_2_200.jpg" height="100" width="100">
+    </td>
+  </tr>
+
+</table>

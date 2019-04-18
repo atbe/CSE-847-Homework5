@@ -32,7 +32,7 @@ axis([-10 10 -10 10]);
 saveas(gcf, 'problem-1-random-points-CLUSTERED-k2.png');
 
 %% perform spectral clustering
-spectral_k_means_assignments = k_means_spec(data, 3, 1);
+spectral_k_means_assignments = k_means_spec(data, 3, 10);
 figure;
 scatter(data(:,1), data(:,2), [], spectral_k_means_assignments);
 title("Cluster assignments after training spectral k-means and k=3");
